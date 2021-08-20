@@ -24,7 +24,7 @@ import re
 
 
 def same_structure_as(original,other):
-    pattern = r'([-]*\w+|\'[-\w\S]+\')'
+    pattern = r'([-]*\w+|\'[\w\S]+\')'
     if re.sub(pattern, '', str(original)) != re.sub(pattern, '', str(other)):
         return False
     
